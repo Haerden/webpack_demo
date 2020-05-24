@@ -12,11 +12,22 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: {
-                    loader: 'file-loader',
+                    loader: 'url-loader',
                     options: {
-                        name: '[name]_[hash].[ext]'
+                        name: '[name]_[hash].[ext]',
+                        outputPath: 'images/',
+                        limit: 2048
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [{
+                    loader: 'style-loader'
+                }, {
+                    loader: 'css-loader'
+                }
+                ]
             }
         ]
     }
