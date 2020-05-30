@@ -17,4 +17,7 @@ function component() {
   return element;
 }
 
+var root = document.getElementById('root');
+root.innerHTML = '<div class="test">abc</div>';
 document.body.appendChild(component());
+

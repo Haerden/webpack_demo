@@ -10,3 +10,8 @@
     }`
 - scss-loader
 - postcss-loader
+
+#### 引入字体图标
+(eot|ttf|svg)
+
+#### 对应官网 asset managerment
