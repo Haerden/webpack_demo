@@ -1,23 +1,12 @@
-import Icon from './a.jpg';
-import _ from 'lodash';
-import './index.css';
+console.log('hello');
 
-function component() {
-  var element = document.createElement('div');
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+var a = [1,3,4];
 
-  // 将图像添加到我们现有的 div
-  var myIcon = new Image();
-  myIcon.classList.add('life');
-  myIcon.src = Icon;
-
-  element.appendChild(myIcon);
-
-  return element;
+for(var i = 0; i < 2;i++) {
+    console.log(a[i]);
 }
 
-var root = document.getElementById('root');
-root.innerHTML = '<div class="test">abc</div>';
-document.body.appendChild(component());
+console.log('a:', a[22]);
 
+consolq.error('dsad');
